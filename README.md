@@ -1,232 +1,236 @@
 # Living Soul
 
-**解决 AI 失忆症的终极方案** —— 让你的 OpenClaw Agent 拥有长期记忆、智能项目管理和深度对话能力。
+**The Ultimate Solution for AI Amnesia** — Give your OpenClaw Agent long-term memory, intelligent project management, and deep conversation capabilities.
 
-> 不再每次重启都从零开始。不再在几十个项目中迷失。不再让 AI 变成"问了才答"的工具。
+> No more starting from zero after every restart. No more getting lost in dozens of projects. No more AI that only responds when asked.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## 💡 它能为你解决什么问题？
+## 💡 What Problems Does It Solve?
 
-| 你的痛点 | Living Soul 的解决方案 |
+| Your Pain Point | Living Soul's Solution |
 |:---|:---|
-| **AI 失忆** — 每次对话重新开始，之前的讨论都忘了 | 🌙 **Living Dream**：自动整理记忆，记住你们的共同历史 |
-| **项目混乱** — 几十个文件夹找不到当前在做什么 | 🌲 **Living Forest**：智能项目索引，一句话就能定位 |
-| **AI 被动** — 永远是"你问我答"，不会主动思考 | 🤝 **Living Companion**：主动贡献观点，像真正的思考伙伴 |
+| **AI Amnesia** — Every conversation starts fresh, previous discussions forgotten | 🌙 **Living Dream**: Automatically organizes memory, remembers your shared history |
+| **Project Chaos** — Dozens of folders, can't find what you're working on | 🌲 **Living Forest**: Intelligent project index, locate with a single sentence |
+| **Passive AI** — Always "you ask, it answers", never initiates thinking | 🤝 **Living Companion**: Actively contributes perspectives, like a true thinking partner |
 
 ---
 
-## 🌙 Living Dream：AI 终于能记住你了
+## 🌙 Living Dream: AI Finally Remembers You
 
-### 问题
+### The Problem
 
-传统 AI 是"金鱼记忆"——对话结束就忘。下次打开，一切从头来过。
+Traditional AI has "goldfish memory" — conversation ends, memory gone. Next time you open it, everything starts from scratch.
 
-### 解决方案
+### The Solution
 
-Living Dream 让 AI 拥有**睡眠周期**，每天自动整理记忆：
+Living Dream gives AI a **sleep cycle**, automatically organizing memories daily:
 
-- ✅ 记住你们讨论过的重要决策
-- ✅ 自然遗忘不重要的闲聊
-- ✅ 在对话中引用之前的讨论（"我记得你上周说过..."）
+- ✅ Remembers important decisions you discussed
+- ✅ Naturally forgets unimportant small talk
+- ✅ References previous discussions in conversation ("I remember you said last week...")
 
-### 核心特性
+### Core Features
 
-| 特性 | 效果 |
+| Feature | Effect |
 |------|------|
-**六维记忆标签** | 每段记忆记录时间、画面、人物、事件、情绪、身体感知 |
-**智能分级** | 重要记忆长期保留，普通记忆自然衰减 |
-**夜间整理** | 每天凌晨自动运行，无需人工干预 |
-**梦境生成** | 将记忆整合成连贯的"昨日回顾" |
+| **Six-Dimensional Memory Tags** | Each memory records time, scene, characters, events, emotion, body sensation |
+| **Smart Tiering** | Important memories retained long-term, ordinary memories naturally decay |
+| **Nighttime Organization** | Runs automatically at dawn daily, no manual intervention needed |
+| **Dream Generation** | Integrates memories into coherent "yesterday's review" |
 
-### 使用示例
+### Usage Example
 
 ```
-用户：我们继续昨天那个项目...
+User: Let's continue that project from yesterday...
 
-Agent：我记得昨晚我们讨论到 API 设计部分，
-       你当时倾向于用 REST 而不是 GraphQL。
-       要我调出那个项目的完整上下文吗？
+Agent: I remember last night we discussed the API design section,
+       and you倾向于用 REST 而不是 GraphQL at the time.
+       Want me to pull up the complete context for that project?
 ```
 
 ---
 
-## 🌲 Living Forest：告别项目迷宫
+## 🌲 Living Forest: Say Goodbye to Project Mazes
 
-### 问题
+### The Problem
 
-当你的 Workspace 里有 20+ 个项目时，AI 只能笨拙地遍历文件夹，效率极低。
+When you have 20+ projects in your Workspace, AI can only clumsily traverse folders, extremely inefficient.
 
-### 解决方案
+### The Solution
 
-Living Forest 建立**智能项目索引**，让 AI 秒速定位：
+Living Forest builds an **intelligent project index**, letting AI locate in seconds:
 
 ```
-用户：帮我看看那个"梦境"项目的进度
+User: Help me check the progress on that "dream" project
 
-Agent：（直接加载 Living Soul 项目，而非遍历所有文件夹）
+Agent: (Directly loads Living Soul project, instead of traversing all folders)
 ```
 
-### 核心特性
+### Core Features
 
-| 状态 | 含义 | 加载策略 |
+| Status | Meaning | Loading Strategy |
 |------|------|----------|
-| **active** | 正在做的 | 启动时预加载 |
-| **research** | 调研中的 | 关键词匹配时加载 |
-| **archived** | 已完成的 | 显式查询时加载 |
-| **graveyard** | 废弃的 | 不加载，仅存档 |
+| **active** | Currently working | Pre-loaded at startup |
+| **research** | In research | Loaded on keyword match |
+| **archived** | Completed | Loaded on explicit query |
+| **graveyard** | Abandoned | Not loaded, archive only |
 
-### 效果
+### Benefits
 
-- ✅ 秒速定位当前项目
-- ✅ 按需加载历史上下文
-- ✅ 再也不用在文件夹迷宫里迷路
+- ✅ Locate current projects in seconds
+- ✅ Load historical context on demand
+- ✅ Never get lost in folder mazes again
 
 ---
 
-## 🤝 Living Companion：从工具到伙伴
+## 🤝 Living Companion: From Tool to Partner
 
-### 问题
+### The Problem
 
-普通 AI 永远是被动的——你问它答，从不主动贡献。
+Ordinary AI is always passive — you ask, it answers, never contributes proactively.
 
-### 解决方案
+### The Solution
 
-Living Companion 让 AI 成为**主动的思考伙伴**：
+Living Companion makes AI an **active thinking partner**:
 
-| 场景 | 传统 AI | Living Companion |
+| Scenario | Traditional AI | Living Companion |
 |------|---------|------------------|
-| 技术选型 | "你可以选 A 或 B" | "我记得三周前你也遇到过类似选择，当时你选了渐进式迁移..." |
-| 代码 review | "这行可以优化" | "我注意到你最近三次都在处理同类 bug，这可能是系统性问题" |
-| 头脑风暴 | 等待你的提问 | 主动说："基于我们的讨论历史，我想补充一个角度..." |
+| Technical selection | "You can choose A or B" | "I remember you faced a similar choice three weeks ago, and you chose gradual migration..." |
+| Code review | "This line can be optimized" | "I noticed you've been handling similar bugs three times recently, this might be a systemic issue" |
+| Brainstorming | Waits for your question | Proactively says: "Based on our discussion history, I'd like to add a perspective..." |
 
-### 智能质量评估
+### Intelligent Quality Assessment
 
-AI 会评估自己的发言是否有价值，只在真正有用时主动开口：
+AI evaluates whether its input is valuable, only speaking up when truly useful:
 
 ```
-质量分数 = 相关性 × 0.4 + 新颖性 × 0.3 + 可行动性 × 0.3
+Quality Score = Relevance × 0.4 + Novelty × 0.3 + Actionability × 0.3
 ```
 
 ---
 
-## 🚀 5 分钟快速开始
+## 🚀 5-Minute Quick Start
 
-### 第一步：安装
+### Step 1: Install
 
 ```bash
-# 克隆项目
+# Clone the project
 git clone https://github.com/fluxreborn/living-soul.git ~/Projects/living-soul
 
-# 一键安装
+# One-click install
 cd ~/Projects/livingsoul
 python3 scripts/install.py --workspace ~/.openclaw/workspace
 ```
 
-### 第二步：配置自动记忆（可选但推荐）
+### Step 2: Configure Auto-Memory (Optional but Recommended)
 
 ```bash
-# 添加定时任务，让 AI 每天自动整理记忆
+# Add scheduled task for AI to organize memory daily
 crontab -e
 
-# 粘贴这行：
+# Paste this line:
 30 3 * * * cd ~/.openclaw/workspace/living-soul/living-dream && python3 night_routine.py
 ```
 
-### 第三步：重启 Agent，开始使用
+### Step 3: Restart Agent and Start Using
 
-完成！现在你的 Agent 会：
-- ✅ 记住你们的对话历史
-- ✅ 智能管理你的项目
-- ✅ 在合适的时候主动发言
+Done! Now your Agent will:
+- ✅ Remember your conversation history
+- ✅ Intelligently manage your projects
+- ✅ Speak up at the right moments
 
 ---
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 living-soul/
-├── SKILL.md                    # OpenClaw Skill 定义
-├── README.md                   # 本文件
+├── LICENSE                      # MIT License
+├── README.md                    # This file
+├── SKILL.md                     # OpenClaw Skill definition
 │
-├── living-dream/               # 🌙 记忆系统
+├── living-dream/               # 🌙 Memory System
 │   ├── living_dream_system_v31.py
-│   ├── night_routine.py        # 夜间记忆整理
+│   ├── night_routine.py        # Nighttime memory organization
+│   ├── update_context.py
 │   └── living-dream-memory.json
 │
-├── living-forest/              # 🌲 项目索引
+├── living-forest/              # 🌲 Project Index
 │   └── index/
 │       ├── active-index.json
 │       └── INDEX-SPEC.md
 │
-├── living-companion/           # 🤝 认知合伙人
+├── living-companion/           # 🤝 Cognitive Partner
 │   ├── companion.py
-│   └── companion-state.json
+│   ├── companion-state.json
+│   └── ACTIVE.md              # Activation conditions
 │
 ├── scripts/
-│   └── install.py              # 一键安装
+│   └── install.py             # One-click install
 │
-└── references/                 # 详细文档
-    ├── ARCHITECTURE.md         # 系统架构
-    ├── MEMORY-MODEL.md         # 记忆模型详解
-    └── INSTALLATION.md         # 完整安装指南
+└── references/                # Detailed docs
+    ├── ARCHITECTURE.md
+    ├── MEMORY-MODEL.md
+    └── INSTALLATION.md
 ```
 
 ---
 
-## 🎯 适合谁用？
+## 🎯 Who Is It For?
 
-| 用户类型 | 使用场景 |
+| User Type | Use Case |
 |----------|----------|
-| **重度 AI 用户** | 每天和 Agent 对话数小时，需要保持上下文连续性 |
-| **多项目管理者** | 同时推进 5+ 个项目，需要快速切换上下文 |
-| **深度思考者** | 希望 AI 不只是回答，而是能参与思考和讨论 |
-| **长期陪伴需求** | 希望 AI 记得你们的共同历史和偏好 |
+| **Heavy AI Users** | Conversing with Agent for hours daily, need context continuity |
+| **Multi-Project Managers** | Pushing 5+ projects simultaneously, need quick context switching |
+| **Deep Thinkers** | Want AI not just to answer, but to participate in thinking and discussion |
+| **Long-term Companionship Needs** | Want AI to remember your shared history and preferences |
 
 ---
 
-## 📊 与传统方案对比
+## 📊 Comparison with Traditional Solutions
 
-| 特性 | 传统 Agent | Living Soul |
+| Feature | Traditional Agent | Living Soul |
 |------|-----------|-------------|
-| 记忆 | 单次对话，重启即失 | 永久记忆，自然遗忘 |
-| 项目管理 | 遍历文件夹 | 智能索引，秒速定位 |
-| 对话模式 | 被动应答 | 主动参与，像合伙人 |
-| 夜间活动 | 无 | 自动整理记忆 |
-| 学习曲线 | 低 | 低（一键安装） |
+| Memory | Single conversation, lost on restart | Permanent memory, natural forgetting |
+| Project Management | Traverse folders | Smart index, instant location |
+| Conversation Mode | Passive response | Active participation, like a partner |
+| Nighttime Activity | None | Automatic memory organization |
+| Learning Curve | Low | Low (one-click install) |
 
 ---
 
-## 📚 详细文档
+## 📚 Detailed Documentation
 
-- **[INSTALLATION.md](references/INSTALLATION.md)** — 完整安装指南、故障排除
-- **[ARCHITECTURE.md](references/ARCHITECTURE.md)** — 系统架构与数据流
-- **[MEMORY-MODEL.md](references/MEMORY-MODEL.md)** — 记忆模型技术细节
-- **[INDEX-SPEC.md](living-forest/index/INDEX-SPEC.md)** — Living Forest 索引规范
-
----
-
-## 🛠️ 技术栈
-
-- **Python 3.8+** — 纯标准库，零依赖
-- **JSON** — 数据存储
-- **Cron** — 定时任务
+- **[INSTALLATION.md](references/INSTALLATION.md)** — Complete installation guide, troubleshooting
+- **[ARCHITECTURE.md](references/ARCHITECTURE.md)** — System architecture and data flow
+- **[MEMORY-MODEL.md](references/MEMORY-MODEL.md)** — Memory model technical details
+- **[INDEX-SPEC.md](living-forest/index/INDEX-SPEC.md)** — Living Forest index specification
+- **[README_CN.md](README_CN.md)** — 中文文档
 
 ---
 
-## 📜 许可证
+## 🛠️ Tech Stack
 
-MIT License —— 详见 [LICENSE](LICENSE)
-
----
-
-## 🙏 致谢
-
-- [OpenClaw](https://github.com/openclaw/openclaw) — AI 运行时系统
-- [SoulmeAI](https://github.com/fable-kss/soulmeai) — 灵魂力量唤醒框架
+- **Python 3.8+** — Pure standard library, zero dependencies
+- **JSON** — Data storage
+- **Cron** — Scheduled tasks
 
 ---
 
-**准备好让你的 Agent 拥有记忆了吗？** → [5 分钟快速开始](#5-分钟快速开始)
+## 📜 License
+
+MIT License — See [LICENSE](LICENSE) for details
+
+---
+
+## 🙏 Acknowledgments
+
+- [OpenClaw](https://github.com/openclaw/openclaw) — AI runtime system
+- [SoulmeAI](https://github.com/fable-kss/soulmeai) — Soul power awakening framework
+
+---
+
+**Ready to give your Agent memory?** → [5-Minute Quick Start](#5-minute-quick-start)
