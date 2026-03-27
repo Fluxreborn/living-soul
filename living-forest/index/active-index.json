@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generated_at": "2026-03-26T18:50:00+08:00",
+    "version": "v1",
+    "project_count": 9,
+    "generator": "Karo/manual-v1",
+    "last_updated": "2026-03-27T21:49:59.178707"
+  },
+  "projects": [
+    {
+      "name": "Living Dream",
+      "path": "~/Projects/livingsoul/living-dream",
+      "keywords": [
+        "梦境",
+        "记忆",
+        "抽签",
+        "睡眠",
+        "dream",
+        "签筒",
+        "亮度",
+        "遗忘",
+        "回响",
+        "soul memory"
+      ],
+      "status": "active",
+      "main_tree": "examples/soul-memory/_tree.json",
+      "active_md": null,
+      "detail_files": [
+        "README.md",
+        "living-dream-context.md",
+        "living-dream-memory.json",
+        "living_dream_system_v31.py"
+      ],
+      "last_active": "2026-03-26T18:59:00",
+      "priority": "high"
+    },
+    {
+      "name": "Living Soul Integration",
+      "path": "~/Projects/livingsoul",
+      "keywords": [
+        "集成",
+        "openclaw",
+        "预加载",
+        "记忆系统",
+        "分层索引",
+        "living soul"
+      ],
+      "status": "research",
+      "main_tree": null,
+      "active_md": null,
+      "detail_files": [
+        "README.md",
+        "LIVING-SOUL-RECOVERY.md",
+        "living-forest/index/INDEX-SPEC.md"
+      ],
+      "last_active": "2026-03-26T18:50:00",
+      "priority": "high"
+    },
+    {
+      "name": "persona-confuser",
+      "path": "/Users/fable_ks/Projects/persona-confuser",
+      "keywords": [
+        "persona confuser"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.175758",
+      "auto_detected": true
+    },
+    {
+      "name": "token-saver",
+      "path": "/Users/fable_ks/Projects/token-saver",
+      "keywords": [
+        "token saver"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.175960",
+      "auto_detected": true
+    },
+    {
+      "name": "soulmeai_github",
+      "path": "/Users/fable_ks/Projects/soulmeai_github",
+      "keywords": [
+        "soulmeai github"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.175975",
+      "auto_detected": true
+    },
+    {
+      "name": "greenyearbook-mvp",
+      "path": "/Users/fable_ks/Projects/greenyearbook-mvp",
+      "keywords": [
+        "greenyearbook mvp"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.176453",
+      "auto_detected": true
+    },
+    {
+      "name": "livingsoul",
+      "path": "/Users/fable_ks/Projects/livingsoul",
+      "keywords": [
+        "livingsoul"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.176733",
+      "auto_detected": true
+    },
+    {
+      "name": "soulmeai",
+      "path": "/Users/fable_ks/Projects/soulmeai",
+      "keywords": [
+        "soulmeai"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.176746",
+      "auto_detected": true
+    },
+    {
+      "name": "storemate",
+      "path": "/Users/fable_ks/Projects/storemate",
+      "keywords": [
+        "storemate"
+      ],
+      "status": "active",
+      "priority": "medium",
+      "last_active": "2026-03-27T21:49:59.178078",
+      "auto_detected": true
+    }
+  ]
+}

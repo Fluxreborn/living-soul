@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "generated_at": "2026-03-26T18:50:00+08:00",
+    "version": "v1",
+    "project_count": 1
+  },
+  "projects": [
+    {
+      "name": "Token Saver",
+      "path": "~/Projects/livingsoul/living-forest/examples/token-saver",
+      "status": "archived",
+      "archived_at": "2026-03-23T00:00:00",
+      "brief": "Token 消耗优化系统，通过子 Agent 隔离降低成本。因技术复杂度过高于 2026-03-23 归档，核心概念演化为 Soul Memory 项目。"
+    }
+  ]
+}

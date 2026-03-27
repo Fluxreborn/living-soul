@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "version": "v2",
+    "generated_at": "2026-03-26T22:08:34.733119",
+    "project_count": 3,
+    "active_count": 2,
+    "archived_count": 1,
+    "last_updated": "2026-03-27T13:33:59.992149"
+  },
+  "projects": [
+    {
+      "name": "Living Dream",
+      "path": "~/Projects/livingsoul/living-dream",
+      "status": "active",
+      "keywords": [
+        "梦境",
+        "记忆",
+        "抽签",
+        "睡眠",
+        "dream",
+        "签筒",
+        "亮度",
+        "遗忘",
+        "回响",
+        "soul memory"
+      ],
+      "main_tree": "examples/soul-memory/_tree.json",
+      "active_md": null,
+      "detail_files": [
+        "README.md",
+        "living-dream-context.md",
+        "living-dream-memory.json",
+        "living_dream_system_v31.py"
+      ],
+      "last_active": "2026-03-27T13:33:59.992144",
+      "priority": "high"
+    },
+    {
+      "name": "Living Soul Integration",
+      "path": "~/Projects/livingsoul",
+      "status": "research",
+      "keywords": [
+        "集成",
+        "openclaw",
+        "预加载",
+        "记忆系统",
+        "分层索引",
+        "living soul"
+      ],
+      "main_tree": null,
+      "active_md": null,
+      "detail_files": [
+        "README.md",
+        "LIVING-SOUL-RECOVERY.md",
+        "living-forest/index/INDEX-SPEC.md"
+      ],
+      "last_active": "2026-03-27T13:33:59.992145",
+      "priority": "high"
+    },
+    {
+      "name": "Token Saver",
+      "path": "~/Projects/livingsoul/living-forest/examples/token-saver",
+      "status": "archived",
+      "archived_at": "2026-03-23T00:00:00",
+      "brief": "Token 消耗优化系统，通过子 Agent 隔离降低成本。因技术复杂度过高于 2026-03-23 归档，核心概念演化为 Soul Memory 项目。"
+    }
+  ]
+}

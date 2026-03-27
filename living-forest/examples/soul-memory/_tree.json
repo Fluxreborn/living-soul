@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "name": "Soul Memory",
+    "created_at": "2026-03-24T12:45:00",
+    "version": "v3",
+    "description": "**Soul Memory 人格记忆系统**\n\n目标：用抽签机替代 OpenClaw 的 daily memory，让 AI 拥有「睡眠」和「梦境」。\n\n---",
+    "status": "active",
+    "updated_at": "2026-03-26T16:43:43.810311"
+  },
+  "nodes": [
+    {
+      "id": "001",
+      "label": "立项",
+      "status": "done",
+      "type": "trunk",
+      "parent": null,
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810277",
+      "updated_at": "2026-03-26T16:43:43.810277",
+      "metadata": {}
+    },
+    {
+      "id": "002",
+      "label": "抽签机",
+      "status": "active",
+      "type": "trunk",
+      "parent": null,
+      "children": [
+        "002.1",
+        "002.2",
+        "002.3"
+      ],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810282",
+      "updated_at": "2026-03-26T16:43:43.810282",
+      "metadata": {}
+    },
+    {
+      "id": "002.1",
+      "label": "签数生成（1-49）",
+      "status": "done",
+      "type": "trunk",
+      "parent": "002",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810284",
+      "updated_at": "2026-03-26T16:43:43.810284",
+      "metadata": {}
+    },
+    {
+      "id": "002.2",
+      "label": "梦境输出（≤49字）",
+      "status": "active",
+      "type": "trunk",
+      "parent": "002",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810285",
+      "updated_at": "2026-03-26T16:43:43.810285",
+      "metadata": {}
+    },
+    {
+      "id": "002.3",
+      "label": "反向概率分布",
+      "status": "done",
+      "type": "trunk",
+      "parent": "002",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810287",
+      "updated_at": "2026-03-26T16:43:43.810287",
+      "metadata": {}
+    },
+    {
+      "id": "003",
+      "label": "亮度系统",
+      "status": "done",
+      "type": "trunk",
+      "parent": null,
+      "children": [
+        "003.1",
+        "003.2"
+      ],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810288",
+      "updated_at": "2026-03-26T16:43:43.810288",
+      "metadata": {}
+    },
+    {
+      "id": "003.1",
+      "label": "五维亮度计算",
+      "status": "done",
+      "type": "trunk",
+      "parent": "003",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810290",
+      "updated_at": "2026-03-26T16:43:43.810290",
+      "metadata": {}
+    },
+    {
+      "id": "003.2",
+      "label": "自然衰减公式",
+      "status": "done",
+      "type": "trunk",
+      "parent": "003",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810291",
+      "updated_at": "2026-03-26T16:43:43.810291",
+      "metadata": {}
+    },
+    {
+      "id": "004",
+      "label": "睡眠周期",
+      "status": "active",
+      "type": "trunk",
+      "parent": null,
+      "children": [
+        "004.1",
+        "004.2",
+        "004.3",
+        "004.4"
+      ],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810293",
+      "updated_at": "2026-03-26T16:43:43.810293",
+      "metadata": {}
+    },
+    {
+      "id": "004.1",
+      "label": "每晚自动执行",
+      "status": "done",
+      "type": "trunk",
+      "parent": "004",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810294",
+      "updated_at": "2026-03-26T16:43:43.810294",
+      "metadata": {}
+    },
+    {
+      "id": "004.2",
+      "label": "首次睡眠验证",
+      "status": "done",
+      "type": "trunk",
+      "parent": "004",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810296",
+      "updated_at": "2026-03-26T16:43:43.810296",
+      "metadata": {}
+    },
+    {
+      "id": "004.3",
+      "label": "积累签库（目标：20-30支）",
+      "status": "active",
+      "type": "trunk",
+      "parent": "004",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810297",
+      "updated_at": "2026-03-26T16:43:43.810297",
+      "metadata": {}
+    },
+    {
+      "id": "005-old",
+      "label": "回声网络",
+      "status": "archived",
+      "type": "graveyard",
+      "parent": null,
+      "children": [],
+      "description": "技术复杂度过高",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810298",
+      "updated_at": "2026-03-26T16:43:43.810298",
+      "metadata": {}
+    },
+    {
+      "id": "004.4",
+      "label": "AI对话集成",
+      "status": "draft",
+      "type": "trunk",
+      "parent": "004",
+      "children": [],
+      "description": "",
+      "files": [],
+      "created_at": "2026-03-26T16:43:43.810309",
+      "updated_at": "2026-03-26T16:43:43.810309",
+      "metadata": {}
+    }
+  ],
+  "evolution": [
+    {
+      "version": "v1",
+      "date": "2026-03-23",
+      "summary": "",
+      "changes": []
+    },
+    {
+      "version": "v2",
+      "date": "2026-03-23 晚",
+      "summary": "",
+      "changes": []
+    },
+    {
+      "version": "v3",
+      "date": "2026-03-24",
+      "summary": "",
+      "changes": []
+    }
+  ],
+  "resurrections": []
+}

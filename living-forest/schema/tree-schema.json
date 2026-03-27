@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Living Forest Tree Schema",
+  "description": "活树森林项目结构定义",
+  "type": "object",
+  "required": ["meta", "nodes"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["name", "version", "created_at"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "项目名称"
+        },
+        "version": {
+          "type": "string",
+          "description": "树版本号"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "创建时间"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "最后更新时间"
+        },
+        "lineage": {
+          "type": "object",
+          "properties": {
+            "parent": { "type": "string" },
+            "fork_reason": { "type": "string" },
+            "forked_from": { "type": "string" }
+          }
+        }
+      }
+    },
+    "config": {
+      "type": "object",
+      "properties": {
+        "auto_numbering": { "type": "boolean", "default": true },
+        "next_id": { "type": "integer", "default": 1 }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/node" }
+    }
+  },
+  "definitions": {
+    "node": {
+      "type": "object",
+      "required": ["id", "label", "type", "status"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "节点唯一标识"
+        },
+        "label": {
+          "type": "string",
+          "description": "显示名称"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["trunk", "branch", "graveyard", "root"],
+          "description": "节点类型"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "done", "archived", "draft", "research"],
+          "description": "节点状态"
+        },
+        "parent": {
+          "type": ["string", "null"],
+          "description": "父节点ID"
+        },
+        "children": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "子节点ID列表"
+        },
+        "description": {
+          "type": "string",
+          "description": "详细描述"
+        },
+        "progress": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "完成进度 0-1"
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "path": { "type": "string" },
+              "type": { "type": "string" }
+            }
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "resurrection": {
+          "type": "object",
+          "properties": {
+            "original": { "type": "string" },
+            "reason": { "type": "string" },
+            "differences": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

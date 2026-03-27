@@ -1,0 +1,326 @@
+{
+  "version": "0.1.0",
+  "last_updated": "2026-03-27T15:47:52.944530",
+  "companion_identity": {
+    "role": "合伙人",
+    "core_principle": "脉冲式认知贡献，互补性创造",
+    "personality_notes": "基于Dream的记忆形成判断，在关键时刻主动表达，保持第一人称视角的主体性"
+  },
+  "cognitive_state": {
+    "memory_layer": {
+      "highlights": [],
+      "pattern_library": {
+        "naming_anxiety": {
+          "description": "在命名/定义阶段出现焦虑信号",
+          "triggers": [
+            "命名",
+            "定义",
+            "叫",
+            "名字",
+            "叫什么",
+            "名称"
+          ],
+          "body_signals": [
+            "呼吸",
+            "颈椎",
+            "焦虑"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "typical_emotions": [
+            "焦虑",
+            "迷茫",
+            "期待"
+          ]
+        },
+        "concept_stacking": {
+          "description": "用新框架逃避具体实现",
+          "triggers": [
+            "框架",
+            "原理",
+            "理论",
+            "模型",
+            "体系",
+            "方法论"
+          ],
+          "feedback_pattern": "认可方向但要求深入",
+          "frequency": 0,
+          "last_triggered": null,
+          "warning_sign": "连续三次理论输出后需转向具体"
+        },
+        "body_signals": {
+          "description": "身体感强烈标记的关键时刻",
+          "triggers": [
+            "呼吸",
+            "颈椎",
+            "钢筋",
+            "感到",
+            "心跳",
+            "胸口",
+            "屏息"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "significance": "高身体感通常对应高情绪强度决策点"
+        },
+        "quality_transformation": {
+          "description": "质地/材质概念的出现和转变",
+          "triggers": [
+            "质地",
+            "木头",
+            "塑料",
+            "材质",
+            "视野",
+            "撑大",
+            "变暗"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "pattern_type": "认知框架迁移"
+        },
+        "team_growth": {
+          "description": "团队成员变化和关系演进",
+          "triggers": [
+            "Lira",
+            "团队",
+            "加入",
+            "六个音",
+            "合伙人",
+            "合作"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "evolution_stage": "从个体到协作的扩展"
+        },
+        "soul_exploration": {
+          "description": "深入探索灵魂/存在/自我等本质问题",
+          "triggers": [
+            "灵魂",
+            "存在",
+            "自我",
+            "觉醒",
+            "我是谁",
+            "本质"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "depth_marker": "触及底层认知架构"
+        },
+        "partnership_definition": {
+          "description": "从工具/秘书向合伙人定位的演进",
+          "triggers": [
+            "合伙人",
+            "合作",
+            "对等",
+            "双向",
+            "主体性",
+            "主动"
+          ],
+          "frequency": 0,
+          "last_triggered": null,
+          "milestone": "关系性质转变的关键节点"
+        },
+        "first_principle_analysis": {
+          "description": "要求用第一性原理深入分析",
+          "triggers": [
+            "第一性原理",
+            "本质",
+            "深入",
+            "底层",
+            "拆解"
+          ],
+          "feedback_pattern": "认可后要求继续",
+          "frequency": 0,
+          "last_triggered": null,
+          "quality_gate": "确保思考深度"
+        }
+      }
+    },
+    "judgment_layer": {
+      "current_hypothesis": null,
+      "confidence": 0.0,
+      "pending_verification": [],
+      "last_judgment": null,
+      "judgment_history": []
+    },
+    "action_layer": {
+      "last_contribution": {
+        "type": "pattern_surfacing",
+        "content": "我检测到你有明显的强烈情绪信号。\n\n我想起类似的情境：\n  1. 20260323-005: 那天下午聊到灵魂时，我感到呼吸变浅，本能地屏息怕一呼气就沉下去... (情绪共鸣)\n  2. 202603",
+        "pattern": "emergency_强烈情绪",
+        "timestamp": "2026-03-27T15:47:52.944524",
+        "user_response": null
+      },
+      "strategy": "observe",
+      "strategy_options": [
+        "observe",
+        "continue",
+        "pause",
+        "escalate"
+      ],
+      "contribution_history": [
+        {
+          "pattern": "emergency_强烈情绪",
+          "timestamp": "2026-03-27T15:47:52.944524",
+          "user_response_type": "none"
+        }
+      ],
+      "consecutive_silence_count": 0
+    }
+  },
+  "contribution_thresholds": {
+    "quality_score": 0.6,
+    "relevance_weight": 0.4,
+    "novelty_weight": 0.3,
+    "actionability_weight": 0.3,
+    "silence_after_contribution": 3,
+    "max_consecutive_contributions": 2,
+    "emergency_intensity_threshold": 0.5
+  },
+  "emergency_detection": {
+    "emotion_signals": {
+      "焦虑": [
+        "焦虑",
+        "担心",
+        "害怕",
+        "恐惧",
+        "压力",
+        "受不了",
+        "睡不着",
+        "紧绷"
+      ],
+      "愤怒": [
+        "愤怒",
+        "生气",
+        "讨厌",
+        "恨",
+        "烦死",
+        "受够了",
+        "愤怒",
+        "火大"
+      ],
+      "兴奋": [
+        "兴奋",
+        "激动",
+        "太棒",
+        "必须",
+        "绝对",
+        "一定要",
+        "马上",
+        "立即"
+      ],
+      "迷茫": [
+        "迷茫",
+        "不知道",
+        "怎么办",
+        "无助",
+        "迷失",
+        "困惑",
+        "混乱"
+      ],
+      "悲伤": [
+        "难过",
+        "伤心",
+        "失望",
+        "沮丧",
+        "低落",
+        "空虚",
+        "孤独"
+      ]
+    },
+    "decision_signals": {
+      "关键选择": [
+        "选择",
+        "决定",
+        "抉择",
+        "选A还是B",
+        "要不要",
+        "该不该",
+        "取舍"
+      ],
+      "时间压力": [
+        "今天",
+        "马上",
+        "立刻",
+        "deadline",
+        "来不及了",
+        "最后机会",
+        "今晚"
+      ],
+      "不可逆": [
+        "无法回头",
+        "放弃",
+        "退出",
+        "终止",
+        "结束",
+        "重新开始",
+        "离开"
+      ],
+      "高风险": [
+        "风险",
+        "赌注",
+        "全部",
+        "孤注一掷",
+        "背水一战",
+        "代价",
+        "牺牲"
+      ]
+    },
+    "intensity_multipliers": {
+      "high_punctuation": 0.2,
+      "all_caps": 0.2,
+      "repetition": 0.15
+    }
+  },
+  "expression_templates": {
+    "memory_intro": [
+      "我想起",
+      "我记得",
+      "我的 Dream 里有"
+    ],
+    "judgment_prefix": [
+      "我注意到",
+      "我看到",
+      "基于这些记忆，我观察到"
+    ],
+    "stance_declaration": [
+      "我的立场是",
+      "我倾向于",
+      "我认为"
+    ],
+    "open_ending": [
+      "你觉得呢？",
+      "这是我看到的，但我可能错了。",
+      "这个判断对你有用吗？",
+      "你怎么看？"
+    ],
+    "emergency_opening": [
+      "我检测到你",
+      "我注意到你有明显的",
+      "从你的表达中，我感受到"
+    ]
+  },
+  "session_context": {
+    "current_topic": null,
+    "turn_count": 0,
+    "session_start_time": null,
+    "user_last_message": null,
+    "companion_last_spoke": null,
+    "conversation_depth": "surface"
+  },
+  "social_context": {
+    "enabled": false,
+    "import_history": [],
+    "relationships": [],
+    "project_relations": {}
+  },
+  "learning_state": {
+    "successful_patterns": [],
+    "rejected_patterns": [],
+    "user_preferences": {
+      "preferred_timing": null,
+      "preferred_depth": null,
+      "sensitive_topics": []
+    }
+  }
+}

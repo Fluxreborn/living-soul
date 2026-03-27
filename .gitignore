@@ -1,0 +1,18 @@
+# Backup files
+*.backup
+*.backup.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Living Soul specific
+living-dream/living-dream-memory.json.backup*

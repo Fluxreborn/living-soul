@@ -1,0 +1,23 @@
+# Living Soul - Cron 配置
+# 位置：~/.openclaw/cron.yaml 或 ~/.config/openclaw/cron.yaml
+# 安装命令：openclaw cron install ~/.openclaw/cron.yaml
+
+jobs:
+  # Living Dream 夜间流程
+  # 运行时间：每天 04:10（在 OpenClaw session 重置前执行）
+  - name: "living-dream-night-routine"
+    schedule: "10 4 * * *"
+    command: |
+      cd ~/Projects/livingsoul/living-dream && \
+      python3 night_routine.py >> logs/night-routine-$(date +%Y%m%d).log 2>&1
+    description: "Living Dream 睡眠周期：衰减/抽签/融合/更新上下文"
+    timeout: "5m"
+    
+  # Living Forest 索引健康检查（可选）
+  - name: "living-forest-health-check"
+    schedule: "0 5 * * *"
+    command: |
+      cd ~/Projects/livingsoul/living-forest && \
+      python3 lf_index.py --validate 2>/dev/null || echo "索引工具未就绪"
+    description: "验证 Living Forest 索引健康状态"
+    timeout: "1m"
