@@ -2,9 +2,9 @@
   "meta": {
     "generated_at": "2026-03-26T18:50:00+08:00",
     "version": "v1",
-    "project_count": 9,
+    "project_count": 4,
     "generator": "Karo/manual-v1",
-    "last_updated": "2026-03-27T21:49:59.178707"
+    "last_updated": "2026-03-30T15:20:00"
   },
   "projects": [
     {
@@ -57,80 +57,29 @@
       "priority": "high"
     },
     {
-      "name": "persona-confuser",
-      "path": "/Users/fable_ks/Projects/persona-confuser",
+      "name": "example-project-1",
+      "path": "~/Projects/example-project-1",
       "keywords": [
-        "persona confuser"
+        "示例",
+        "占位符",
+        "example"
       ],
       "status": "active",
       "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.175758",
+      "last_active": "2026-01-01T00:00:00",
       "auto_detected": true
     },
     {
-      "name": "token-saver",
-      "path": "/Users/fable_ks/Projects/token-saver",
+      "name": "example-project-2",
+      "path": "~/Projects/example-project-2",
       "keywords": [
-        "token saver"
+        "示例",
+        "占位符",
+        "example"
       ],
       "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.175960",
-      "auto_detected": true
-    },
-    {
-      "name": "soulmeai_github",
-      "path": "/Users/fable_ks/Projects/soulmeai_github",
-      "keywords": [
-        "soulmeai github"
-      ],
-      "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.175975",
-      "auto_detected": true
-    },
-    {
-      "name": "greenyearbook-mvp",
-      "path": "/Users/fable_ks/Projects/greenyearbook-mvp",
-      "keywords": [
-        "greenyearbook mvp"
-      ],
-      "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.176453",
-      "auto_detected": true
-    },
-    {
-      "name": "livingsoul",
-      "path": "/Users/fable_ks/Projects/livingsoul",
-      "keywords": [
-        "livingsoul"
-      ],
-      "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.176733",
-      "auto_detected": true
-    },
-    {
-      "name": "soulmeai",
-      "path": "/Users/fable_ks/Projects/soulmeai",
-      "keywords": [
-        "soulmeai"
-      ],
-      "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.176746",
-      "auto_detected": true
-    },
-    {
-      "name": "storemate",
-      "path": "/Users/fable_ks/Projects/storemate",
-      "keywords": [
-        "storemate"
-      ],
-      "status": "active",
-      "priority": "medium",
-      "last_active": "2026-03-27T21:49:59.178078",
+      "priority": "low",
+      "last_active": "2026-01-01T00:00:00",
       "auto_detected": true
     }
   ]
