@@ -1,18 +1,39 @@
-# Backup files
-*.backup
-*.backup.*
+# Living Soul - 运行时数据（开发目录保持干净）
+# 这些数据应该在 ~/.openclaw/workspace/living-soul/ 中
 
-# Python
+## Living Dream 运行时数据
+living-dream/living-dream-context.md
+living-dream/living-dream-memory.json
+living-dream/living-dream-memory.json.backup*
+living-dream/dreams/
+living-dream/logs/
+living-dream/*.log
+
+## Living Companion 运行时数据
+living-companion/companion-state.json
+living-companion/*.log
+
+## Living Forest 运行时索引（自动生成的）
+living-forest/index/active-index.json
+living-forest/index/archived-index.json
+living-forest/index/living-forest-index.json
+living-forest/index/backup/
+living-forest/projects/
+living-forest/*.log
+
+## 系统文件
+.DS_Store
+*.swp
+*.swo
+*~
+
+## Python
 __pycache__/
 *.pyc
 *.pyo
+.Python
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-
-# Living Soul specific
-living-dream/living-dream-memory.json.backup*
+## 临时文件
+tmp/
+temp/
+*.tmp

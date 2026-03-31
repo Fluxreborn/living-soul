@@ -11,6 +11,7 @@ Living Dream - 夜间完整流程
 import json
 import random
 import re
+import argparse
 from datetime import datetime, timedelta
 from pathlib import Path
 from difflib import SequenceMatcher
@@ -19,11 +20,27 @@ from difflib import SequenceMatcher
 class LivingDreamNightRoutine:
     """Living Dream 夜间流程管理器"""
     
-    def __init__(self):
-        # 使用相对路径，不依赖硬编码位置
+    def __init__(self, data_dir=None):
+        # 代码目录（只读）
         self.project_path = Path(__file__).parent.resolve()
-        self.db_path = self.project_path / "living-dream-memory.json"
-        self.context_path = self.project_path / "living-dream-context.md"
+        
+        # 数据目录（可写）- 支持外部指定
+        if data_dir:
+            self.data_path = Path(data_dir).expanduser().resolve()
+        else:
+            # 默认使用代码所在目录（兼容旧版本）
+            self.data_path = self.project_path
+        
+        # 确保数据目录存在
+        self.data_path.mkdir(parents=True, exist_ok=True)
+        
+        # 数据文件路径
+        self.db_path = self.data_path / "living-dream-memory.json"
+        self.context_path = self.data_path / "living-dream-context.md"
+        self.dreams_path = self.data_path / "dreams"
+        self.dreams_path.mkdir(exist_ok=True)
+        
+        # OpenClaw 路径（读取 session 数据）
         self.openclaw_path = Path("~/.openclaw").expanduser()
         
         # 加载签筒数据
@@ -827,9 +844,16 @@ if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='Living Dream 夜间维护流程')
     parser.add_argument('--init', action='store_true', help='初始化签筒数据库')
+    parser.add_argument('--data-dir', type=str, default=None, 
+                        help='数据目录路径（默认使用代码所在目录）')
     args = parser.parse_args()
     
-    routine = LivingDreamNightRoutine()
+    # 使用指定的数据目录
+    routine = LivingDreamNightRoutine(data_dir=args.data_dir)
+    
+    print(f"📂 数据目录: {routine.data_path}")
+    print(f"📂 代码目录: {routine.project_path}")
+    print()
     
     if args.init:
         # 初始化模式：创建空数据库
