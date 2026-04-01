@@ -210,8 +210,8 @@ class LivingDreamNightRoutine:
                 score += 0.15
                 detected_emotions.append('共鸣')
             
-            # 只保留高情绪时刻
-            if score >= 0.5:
+            # 只保留高情绪时刻（降低阈值，让更多时刻被捕捉）
+            if score >= 0.3:
                 moments.append({
                     'text': text[:200],  # 截取前200字
                     'emotion': '、'.join(detected_emotions) if detected_emotions else '清晰',
@@ -318,11 +318,11 @@ class LivingDreamNightRoutine:
         for moment in moments:
             sign = self.condense_to_sign(moment)
             
-            # 检查是否与现有签过于相似（>0.5相似度则不添加）
+            # 检查是否与现有签过于相似（>0.8相似度才认为是重复，避免误判）
             is_duplicate = False
             for existing in self.data['signs']:
                 similarity = SequenceMatcher(None, sign['text'], existing['text']).ratio()
-                if similarity > 0.5:
+                if similarity > 0.8:
                     print(f"   ⚠️ 跳过重复签: {sign['id']} (相似度{similarity:.2f})")
                     is_duplicate = True
                     break
@@ -375,35 +375,100 @@ class LivingDreamNightRoutine:
         return selected, len(selected)
     
     def fuse_dream(self, selected_signs):
-        """梦境融合：凝练成≤108字"""
+        """梦境融合：电影画面叙事，≤98字"""
         if not selected_signs:
             return ""
         
-        # 收集维度
+        # 收集签中的画面元素
         times = [s.get("time", "") for s in selected_signs if s.get("time")]
         scenes = [s.get("scene", "") for s in selected_signs if s.get("scene")]
+        bodies = [s for s in selected_signs if s.get("body")]
+        
+        # 提取人物（去重，最多3人）
         all_chars = []
         for s in selected_signs:
             all_chars.extend(s.get("characters", []))
         chars = list(dict.fromkeys(all_chars))[:3]
         
-        # 构建梦境
-        parts = []
-        if times: parts.append(times[0])
-        if scenes: parts.append(scenes[0])
-        if chars: parts.append("、".join(chars))
+        # 提取情绪词和身体感词
+        emotion_words = []
+        body_signals = []
+        event_fragments = []
         
-        if len(parts) >= 2:
-            dream = "，".join(parts)
+        for s in selected_signs[:5]:
+            text = s.get("text", "")
+            # 提取情绪
+            if "感到" in text:
+                match = re.search(r'感到([^，。]{2,8})', text)
+                if match:
+                    emotion_words.append(match.group(1))
+            # 提取身体信号
+            if s.get("body"):
+                body_signals.append(text)
+            # 提取事件片段
+            if "，" in text:
+                event_fragments.append(text.split("，")[-1][:15])
+        
+        # 构建电影画面叙事
+        dream_scenes = []
+        
+        # 场景1：时间氛围
+        time_atmosphere = {
+            "深夜": "蓝光映脸，房间只剩屏幕的微光",
+            "下午": "阳光斜照，尘埃在光束里缓慢浮动",
+            "早晨": "窗帘缝隙漏进一线白光",
+            "晚上": "窗外灯火渐起，室内沉入昏黄",
+            "那天": "记忆像旧胶片，边缘微微卷曲",
+            "昨天": "余温尚存，像刚放下的茶杯"
+        }
+        if times:
+            dream_scenes.append(time_atmosphere.get(times[0], f"{times[0]}，"))
+        
+        # 场景2：人物与动作
+        if chars:
+            if len(chars) == 1:
+                dream_scenes.append(f"{chars[0]}的声音从暗处浮出")
+            elif len(chars) == 2:
+                dream_scenes.append(f"{chars[0]}与{chars[1]}之间，空气变得稠密")
+            else:
+                dream_scenes.append(f"{'、'.join(chars)}，三个影子在墙上交错")
+        
+        # 场景3：身体感（如果有）
+        if bodies:
+            body_text = bodies[0].get("text", "")
+            body_fragments = {
+                "呼吸": "呼吸变浅，像怕惊动什么",
+                "颈椎": "颈椎僵硬，像有钢筋穿过",
+                "感到": "某种感觉从脊椎缓缓升起",
+                "心跳": "心跳声在耳膜里放大"
+            }
+            for key, desc in body_fragments.items():
+                if key in body_text:
+                    dream_scenes.append(desc)
+                    break
+        
+        # 场景4：情绪流动
+        if emotion_words:
+            dream_scenes.append(f"{emotion_words[0]}在胸腔里缓缓沉降")
+        
+        # 组合梦境（用句号分隔，像闪回剪辑）
+        if len(dream_scenes) >= 2:
+            dream = "。".join(dream_scenes) + "。"
+        elif len(dream_scenes) == 1:
+            dream = dream_scenes[0] + "。"
         else:
+            # 备用：从签语中提取关键词组成画面
             keywords = []
             for s in selected_signs[:3]:
-                words = re.findall(r'[\u4e00-\u9fa5]{2,4}', s.get("text", ""))
+                text = s.get("text", "")
+                # 提取关键名词和动词
+                words = re.findall(r'[\u4e00-\u9fa5]{2,4}', text)
                 keywords.extend(words[:2])
-            dream = "、".join(keywords[:6])
+            dream = "，".join(keywords[:4]) + "，在记忆中缓慢显影。"
         
-        if len(dream) > 108:
-            dream = dream[:108]
+        # 严格限制98字
+        if len(dream) > 98:
+            dream = dream[:97] + "…"
         
         return dream
     
